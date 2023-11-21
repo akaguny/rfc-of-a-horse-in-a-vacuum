@@ -1,0 +1,13 @@
+## random feature
+
+:toc:
+
+=== Глоссарий
+
+include::../../glossary[leveloffset=+1]
+
+:sectnums:
+
+=== Оценки
+
+include::estimate.adoc[]
