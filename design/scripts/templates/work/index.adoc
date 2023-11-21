@@ -1,0 +1,17 @@
+## {{featureName}}
+
+Затрагивает сущности: {{entity}}
+
+:toc:
+
+=== Глоссарий
+
+include::../../glossary[leveloffset=+1]
+
+:sectnums:
+
+include::concept/index.adoc[leveloffset=+1]
+
+=== Оценки
+
+include::estimate.adoc[]

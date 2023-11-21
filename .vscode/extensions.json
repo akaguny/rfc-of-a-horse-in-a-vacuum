@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "asciidoctor.asciidoctor-vscode",
+        "editorconfig.editorconfig",
+        "oderwat.indent-rainbow",
+        "marp-team.marp-vscode",
+        "mrcoder.zenuml",
+        "vstirbu.vscode-mermaid-preview",
+        "vivaxy.vscode-conventional-commits"
+    ]
+}
