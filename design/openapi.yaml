@@ -1,0 +1,63 @@
+openapi: "3.0.2"
+info:
+  title: API Title
+  version: "1.0"
+servers:
+  - url: https://api.server.test/v1
+tags:
+  - name: CUSTOMER
+    description: клиент
+  - name: ORDER
+    description: заказ
+  - name: LINE-ITEM
+    description: товар в заказе
+paths:
+  /health:
+    get:
+      responses:
+        "200":
+          description: OK, приложение готово обрабатывать запросы
+        "500":
+          description: FAIL, приложение не готово обрабатывать запросы
+  /orders:
+    get:
+      operationId: orders-get-all
+      tags:
+        - ORDER
+      summary: получить список заказов
+      responses:
+        "200":
+          $ref: "#/components/responses/OrderList"
+components:
+  schemas:
+    OrderId:
+      type: number
+      example: 10005
+    OrderIdentifier:
+      type: object
+      properties:
+        orderId:
+          $ref: "#/components/schemas/OrderId"
+    OrderParameters:
+      type: object
+      properties:
+        orderNumber:
+          type: number
+        deliveryAddress:
+          type: string
+          example: Санкт-Петербург, пр-т Невский, д 4/1, офис 204
+    Order:
+      description: Заказ
+      allOf:
+        - $ref: "#/components/schemas/OrderIdentifier"
+        - $ref: "#/components/schemas/OrderParameters"
+  responses:
+    OrderList:
+      description: список заказов
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: "#/components/schemas/Order"
+# add comments after that

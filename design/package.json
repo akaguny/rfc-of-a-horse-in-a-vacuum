@@ -1,0 +1,17 @@
+{
+  "name": "design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "npx prettier . --write",
+    "format:openapi": "npx openapi-format openapi.yaml -o openapi.yaml",
+    "feature": "npx plop@^4.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "plop": "^4.0.0"
+  }
+}
