@@ -9,4 +9,10 @@ erDiagram
         int orderId
         string deliveryAddress
     }
+    ORDER ||--o{ ITEM : contains
+    ITEM {
+        int itemId
+        string price
+        string name
+    }
 %% add comments after that

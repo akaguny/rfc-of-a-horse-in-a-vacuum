@@ -1,0 +1,17 @@
+## user can describe items
+
+Затрагивает сущности:  customer, order
+
+:toc:
+
+=== Глоссарий
+
+include::../../glossary[leveloffset=+1]
+
+:sectnums:
+
+include::concept/index.adoc[leveloffset=+1]
+
+=== Оценки
+
+include::estimate.adoc[]
