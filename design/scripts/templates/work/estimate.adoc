@@ -1,0 +1,6 @@
+== Оценка {{featureName}}
+
+:toc:
+
+include::0-estimate-be.adoc[]
+include::1-estimate-ui.adoc[]
